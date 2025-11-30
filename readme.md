@@ -1,7 +1,7 @@
 ## MOS CRC32 utility
 Creates a CRC32 checksum of a given file
 ### Installation
-Install [crc32.bin](https://github.com/envenomator/releases/latest/download/agon-crc32) in the /bin folder on your SD card. Create this folder first if it's doesn't exist.
+Install [crc32.bin](https://github.com/envenomator/agon-crc32/releases/latest/download/crc32.bin) in the /bin folder on your SD card. Create this folder first if it's doesn't exist.
 ### Usage
 ```
 crc32 <filename>
