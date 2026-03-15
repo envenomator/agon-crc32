@@ -1,13 +1,11 @@
 ## MOS CRC32 utility
-Creates a CRC32 checksum of a given file
+Displays the CRC32 checksum of one or multiple files. Supports UNIX-style pattern matching with * and ? wildcards.
 ### Installation
 Install [crc32.bin](https://github.com/envenomator/agon-crc32/releases/latest/download/crc32.bin) in the /bin folder on your SD card. Create this folder first if it's doesn't exist.
 ### Usage
 ```
-crc32 <filename>
+crc32 filename [filename...]
 ```
 
-### Build from source
-The source can be assembled using [agon-ez80asm](https://github.com/AgonPlatform/agon-ez80asm). Obtain a version of the assembler and assemble with
-```
-ez80asm crc32.s
+Wildcards can be used as a pattern to a filename. Patterns in a directory name are not supported.
+
