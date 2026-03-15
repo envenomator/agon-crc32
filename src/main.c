@@ -91,12 +91,14 @@ void calc_printCRC32(const char *filename) {
     return;
   }
 
+  putstring("...", false);
   crc32_initialize();
   while((readsize = fread(buffer, 1, BUFFERSIZE, fp)) != 0) {
     crc32(buffer, readsize);
   }       
   crc32_result = crc32_finalize();
 
+  putchar('\r');
   print_uint32_hex(crc32_result);
   putchar(' ');
   putstring(getFilename(filename), true);
