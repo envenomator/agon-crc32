@@ -92,7 +92,7 @@ void calc_printCRC32(const char *filename) {
   }
 
   crc32_initialize();
-  while((readsize = fread(buffer, BUFFERSIZE, 1, fp) != 0)) {
+  while((readsize = fread(buffer, 1, BUFFERSIZE, fp)) != 0) {
     crc32(buffer, readsize);
   }       
   crc32_result = crc32_finalize();
